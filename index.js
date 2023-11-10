@@ -14,10 +14,9 @@ const server = http.createServer((req, res) => {
         res.end();
     } else if (req.url === "/node") {
         
-        res.write("<h1>Introduction To Node Js</h1>");
-        res.write("<p>Node js is an open source and cross platform javaScript runtime environment that allows us to execute javaScript code out of a web browser, on the server side, allowing for server-side scripting.</p>");
+        res.write(" <h1>Introduction To Node Js</h1><p>Node js is an open source and cross platform javaScript runtime environment that allows us to execute javaScript code out of a web browser, on the server side, allowing for server-side scripting.</p> <p>Node follows an event driven, non blocking I/O model. That means it uses an event-loop to handle asynchronous operations, making it well-suited fpr building scalable and efficient applications that can handle a large number of concurrent connections.</p> <ul><h2>Advantages of Node Js</h2> <li>Fast Execution</li><li>Asynchronous and Non Blocking I/O</li><li>Unified Language</li><li>Cross Platform</li><li>Real Time Capabilities</li></ul>");
 
-        res.write("<p>Node follows an event driven, non blocking I/O model. That means it uses an event-loop to handle asynchronous operations, making it well-suited fpr building scalable and efficient applications that can handle a large number of concurrent connections.</p>");
+
 
         res.end();
     } else {
@@ -26,5 +25,5 @@ const server = http.createServer((req, res) => {
     }
 });
 server.listen(3000, () => {
-    console.log(`server started On https://localhost:3000`)
+    console.log(`server started On http://localhost:3000/`)
 })
